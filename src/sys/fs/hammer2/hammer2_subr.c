@@ -381,7 +381,7 @@ hammer2_signal_check(void)
 
 	bzero(&ctx, sizeof(ctx));
 
-	return (cursig(p, &ctx, sizeof(ctx)));
+        return (cursig(p, &ctx, 1));
 }
 
 const char *
